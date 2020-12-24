@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Grain, Seed, & Pulse",
+    "img": "/products/grain.jpg"
+  },
+  {
+    "name": "Edible Oil",
+    "img": "/products/oil.jpg"
+  },
+  {
+    "name": "Scrap Metal",
+    "img": "/products/scrapmetal.jpg"
+  },
+  {
+    "name": "Iron & Steel",
+    "img": "/products/iron.jpg"
+  },
+  {
+    "name": "Aluminum",
+    "img": "/products/aluminum.jpg"
+  },
+  {
+    "name": "Copper",
+    "img": "/products/copper.jpg"
+  }
+]
