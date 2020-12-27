@@ -8,8 +8,11 @@ const layout = ({ children }) => {
       <Head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <html lang="en" />
-        <title>Turni Saha's Film Portfolio</title>
-        <meta name="description" content="A Minimal Videographer" />
+        <title>Bikiology</title>
+        <meta
+          name="description"
+          content="We are a Canadian integrated Export-Import Company headquartered in Alberta-Canada, committed to maximizing value by sustainably developing our product & services to our clients all over the world."
+        />
         <link
           rel="stylesheet"
           href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"

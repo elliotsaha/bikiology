@@ -8,6 +8,7 @@ import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import products from "../components/products.json";
 import Link from "next/link";
+import ContactButton from "../components/contactButton"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -48,17 +49,6 @@ const useStyles = makeStyles((theme) =>
     aboveFoldIcon: {
       fontSize: "3.2rem",
       color: "black",
-    },
-    aboveFoldButton: {
-      background: "#F8BB86",
-      padding: "1rem",
-      color: "white",
-      textTransform: "none",
-      fontWeight: "bold",
-      fontFamily: "Gilroy, sans-serif",
-      "&:hover": {
-        background: "#FFB16C",
-      },
     },
     aboveFoldTextBoxInner: {
       display: "flex",
@@ -281,9 +271,7 @@ export default function index() {
                 world.
               </p>
               <div>
-                <Button className={classes.aboveFoldButton}>
-                  Get In Touch
-                </Button>
+                <ContactButton />
               </div>
             </div>
             <div className={classes.expandMoreContainer}>
