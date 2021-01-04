@@ -129,28 +129,85 @@ const useStyles = makeStyles((theme) =>
       justifyContent: "center",
       alignItems: "center",
       padding: "5rem",
-      paddingLeft: "20rem",
+      width: "100%",
+      [theme.breakpoints.down("920")]: {
+        paddingRight: 0,
+        paddingLeft: 0,
+        paddingTop: "2rem",
+        paddingBottom: "2rem",
+      },
     },
     belowFoldTextContainer: {
       position: "relative",
-      paddingRight: "20rem",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "100%",
     },
     belowFoldImage: {
       width: "30rem",
       margin: 0,
       opacity: "60%",
       marginRight: "20rem",
+      [theme.breakpoints.down("1050")]: {
+        width: "25rem",
+      },
+      [theme.breakpoints.down("800")]: {
+        width: "20rem",
+        marginRight: "15rem",
+      },
+      [theme.breakpoints.down("600")]: {
+        marginRight: "10vw",
+        width: "15rem",
+      },
+      [theme.breakpoints.down("350")]: {
+        marginLeft: 0,
+        width: "12.5rem",
+        borderRadius: "0 0.25rem 0.25rem 0",
+      },
+    },
+    belowFoldImageContainer: {
+      [theme.breakpoints.down("350")]: {
+        marginLeft: 0,
+        width: "100%",
+      },
     },
     belowFoldText: {
       marginLeft: "25rem",
+      maxWidth: "40rem",
       color: "white",
       fontWeight: "bold",
       fontSize: "3.5rem",
       lineHeight: "4.25rem",
       position: "absolute",
+      [theme.breakpoints.down("1050")]: {
+        marginLeft: "20rem",
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+        maxWidth: "30rem",
+        marginRight: "3rem",
+      },
+      [theme.breakpoints.down("800")]: {
+        marginLeft: "15rem",
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+        maxWidth: "25rem",
+        marginRight: "3rem",
+      },
+      [theme.breakpoints.down("600")]: {
+        marginLeft: "35vw",
+        fontSize: "2rem",
+        lineHeight: "2.5rem",
+        maxWidth: "25rem",
+      },
+      [theme.breakpoints.down("500")]: {
+        marginLeft: "35vw",
+        fontSize: "1.6rem",
+        lineHeight: "2.1rem",
+        width: "15rem",
+      },
     },
     offerInner: {
       display: "flex",
@@ -331,7 +388,7 @@ export default function index() {
         </div>
         <div className={classes.belowFold}>
           <div className={classes.belowFoldTextContainer}>
-            <div>
+            <div className={classes.belowFoldImageContainer}>
               <img
                 src="/building.png"
                 alt="building"
