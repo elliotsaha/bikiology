@@ -313,20 +313,48 @@ const useStyles = makeStyles((theme) =>
     servicesHeader: {
       fontWeight: "bold",
       fontSize: "3rem",
-      marginBottom: "-0.5rem",
+      textAlign: "center",
+      marginRight: "0.5rem",
+      marginLeft: "0.5rem",
+      lineHeight: "3.25rem",
+      marginBottom: "0.5rem",
+      [theme.breakpoints.down("600")]: {
+        fontSize: "2.5rem",
+        marginRight: 0,
+        marginLeft: 0,
+      },
+      [theme.breakpoints.down("325")]: {
+        fontSize: "2.2rem",
+        lineHeight: "2.7rem",
+        marginRight: 0,
+        marginLeft: 0,
+      },
     },
     servicesSub: {
       fontWeight: "bold",
-      marginBottom: "1.2rem",
+      marginBottom: "1.8rem",
       fontSize: "1rem",
       textTransform: "uppercase",
       letterSpacing: "0.35rem",
+      textAlign: "center",
+      [theme.breakpoints.down("325")]: {
+        fontSize: "0.95rem",
+        lineHeight: "1.2rem",
+      },
     },
     servicesGrid: {
       display: "grid",
       gridTemplateColumns: "1fr 1fr 1fr",
       gridTemplateRows: "1fr 1fr",
       marginBottom: "2rem",
+      [theme.breakpoints.down("750")]: {
+        gridTemplateColumns: "1fr 1fr",
+        gridTemplateRows: "1fr 1fr 1fr",
+      },
+      [theme.breakpoints.down("500")]: {
+        gridTemplateColumns: "1fr",
+        gap: "1rem",
+      },
     },
     servicesGridChild: {
       position: "relative",
@@ -339,6 +367,22 @@ const useStyles = makeStyles((theme) =>
         margin: 0,
         objectFit: "cover",
         transition: "all 0.4s ease",
+        [theme.breakpoints.down("750")]: {
+          opacity: "55%",
+        },
+        [theme.breakpoints.down("1000")]: {
+          width: "17.5rem",
+          height: "17.5rem",
+        },
+        [theme.breakpoints.down("900")]: {
+          width: "15rem",
+          height: "15rem",
+        },
+        [theme.breakpoints.down("500")]: {
+          width: "100%",
+          height: "20rem",
+          borderRadius: "0.5rem",
+        },
       },
       "& div": {
         position: "absolute",
@@ -348,6 +392,10 @@ const useStyles = makeStyles((theme) =>
         display: "none",
         transition: "all 0.4s ease",
         opacity: "0%",
+        [theme.breakpoints.down("750")]: {
+          display: "block",
+          opacity: "100%",
+        },
       },
       "&:hover": {
         "& img": {
