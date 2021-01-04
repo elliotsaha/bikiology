@@ -223,6 +223,9 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      height: "100%",
+      marginTop: "auto",
+      marginBottom: "auto",
     },
     offerTitle: {
       fontWeight: "bold",
@@ -245,6 +248,8 @@ const useStyles = makeStyles((theme) =>
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
+      marginRight: "2.5rem",
+      marginLeft: "2.5rem",
     },
     offerRoot: {
       display: "flex",
@@ -257,6 +262,17 @@ const useStyles = makeStyles((theme) =>
       gap: "10rem",
       overflow: "hidden",
       zIndex: 2,
+      [theme.breakpoints.down("1440")]: {
+        gap: "5rem",
+      },
+      [theme.breakpoints.down("1000")]: {
+        gap: "1rem",
+      },
+      [theme.breakpoints.down("920")]: {
+        justifyContent: "center",
+        flexDirection: "column",
+        gap: "3.5rem",
+      },
     },
     offerCircle: {
       position: "absolute",
@@ -425,7 +441,7 @@ export default function index() {
                   <div className={classes.iconOuter}>
                     <LocalAtmIcon className={classes.icon} />
                   </div>
-                  <div className={classes.offerTitle}>Market Price</div>
+                  <div className={classes.offerTitle}>Services</div>
                 </div>
                 <div className={classes.offerText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -440,7 +456,7 @@ export default function index() {
                   <div className={classes.iconOuter}>
                     <AccountBalanceIcon className={classes.icon} />
                   </div>
-                  <div className={classes.offerTitle}>Services</div>
+                  <div className={classes.offerTitle}>Prices</div>
                 </div>
                 <div className={classes.offerText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
