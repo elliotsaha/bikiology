@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
+      overflow: "hidden",
     },
     aboveFold: {
       textAlign: "center",
@@ -29,6 +30,31 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "90rem",
       lineHeight: "8rem",
       marginBottom: 0,
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "5.5rem",
+        lineHeight: "6rem",
+        maxWidth: "70rem",
+      },
+      [theme.breakpoints.down("950")]: {
+        fontSize: "4.5rem",
+        lineHeight: "5rem",
+        maxWidth: "55rem",
+      },
+      [theme.breakpoints.down("770")]: {
+        fontSize: "3.5rem",
+        lineHeight: "4rem",
+        maxWidth: "45rem",
+        marginRight: "1.5rem",
+        marginLeft: "1.5rem",
+      },
+      [theme.breakpoints.down("430")]: {
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
+      [theme.breakpoints.down("380")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
     },
     aboveFoldSub: {
       textTransform: "uppercase",
@@ -39,6 +65,10 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "1rem",
       marginTop: "0.5rem",
       marginBottom: "2rem",
+      [theme.breakpoints.down("650")]: {
+        fontSize: "1rem",
+        letterSpacing: "0.7rem",
+      },
     },
     aboveFoldCircle3: {
       background: "#F8BB86",
