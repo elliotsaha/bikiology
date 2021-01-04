@@ -8,11 +8,12 @@ import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import products from "../components/products.json";
 import Link from "next/link";
-import ContactButton from "../components/contactButton"
+import ContactButton from "../components/contactButton";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
+      overflow: "hidden",
     },
     aboveFold: {
       display: "flex",
@@ -30,6 +31,31 @@ const useStyles = makeStyles((theme) =>
       fontWeight: "bold",
       textAlign: "center",
       maxWidth: "90rem",
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "5.5rem",
+        lineHeight: "6rem",
+        maxWidth: "70rem",
+      },
+      [theme.breakpoints.down("950")]: {
+        fontSize: "4.5rem",
+        lineHeight: "5rem",
+        maxWidth: "55rem",
+      },
+      [theme.breakpoints.down("770")]: {
+        fontSize: "3.5rem",
+        lineHeight: "4rem",
+        maxWidth: "45rem",
+        marginRight: "1.5rem",
+        marginLeft: "1.5rem",
+      },
+      [theme.breakpoints.down("430")]: {
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
+      [theme.breakpoints.down("380")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
     },
     paragraph: {
       fontSize: "1.1rem",
@@ -37,6 +63,16 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "50rem",
       fontWeight: 600,
       color: "grey",
+      [theme.breakpoints.down("950")]: {
+        fontSize: "0.95rem",
+        marginRight: "3rem",
+        marginLeft: "3rem",
+      },
+      [theme.breakpoints.down("430")]: {
+        fontSize: "0.9rem",
+        marginRight: "3rem",
+        marginLeft: "3rem",
+      },
     },
     aboveFoldTextBox: {
       display: "flex",
@@ -68,6 +104,17 @@ const useStyles = makeStyles((theme) =>
       fontSize: "65rem",
       color: "#F8BB86",
       right: 0,
+      [theme.breakpoints.down("1680")]: {
+        right: "-5rem",
+      },
+      [theme.breakpoints.down("1380")]: {
+        right: "-15rem",
+        fontSize: "55rem",
+      },
+      [theme.breakpoints.down("900")]: {
+        right: "-20rem",
+        fontSize: "40rem",
+      },
     },
     expandMoreContainer: {
       position: "absolute",
