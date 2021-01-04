@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme) =>
       boxShadow: "0 0 0 0.5rem #F8BB86",
       right: "-7rem",
       bottom: "-5rem",
+      zIndex: -1,
     },
     objectiveCircle: {
       background: "transparent",
@@ -129,8 +130,8 @@ const useStyles = makeStyles((theme) =>
       justifyContent: "center",
       alignItems: "center",
       gap: "4rem",
-      paddingTop: "5rem",
-      paddingBottom: "5rem",
+      paddingTop: "8rem",
+      paddingBottom: "8rem",
     },
     belowFoldTitle: {
       fontSize: "3rem",
@@ -269,15 +270,13 @@ export default function about() {
           </div>
         </div>
         <div className={classes.coreValues}>
-          
-            <div className={classes.coreValuesTitle}>
-              Our core values contain{" "}
-              <mark className={classes.mark}>integrity</mark>,{" "}
-              <mark className={classes.mark}>innovation</mark>,{" "}
-              <mark className={classes.mark}>efficiency</mark> and{" "}
-              <mark className={classes.mark}>cost-effectiveness.</mark>
-            </div>
-          
+          <div className={classes.coreValuesTitle}>
+            Our core values contain{" "}
+            <mark className={classes.mark}>integrity</mark>,{" "}
+            <mark className={classes.mark}>innovation</mark>,{" "}
+            <mark className={classes.mark}>efficiency</mark> and{" "}
+            <mark className={classes.mark}>cost-effectiveness.</mark>
+          </div>
         </div>
       </div>
     </Layout>

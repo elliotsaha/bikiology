@@ -98,6 +98,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     "& div": {
       marginLeft: "1rem",
+      marginTop: "0.5rem",
       "& img": {
         width: "10rem",
       },
@@ -111,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "0.75rem",
     paddingRight: "5rem",
     paddingLeft: "5rem",
-    paddingBottom: '0.75rem',
+    paddingBottom: "0.75rem",
     [theme.breakpoints.down("1200")]: {
       paddingRight: "2rem",
       paddingLeft: "2rem",
@@ -147,6 +148,9 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     fontWeight: "bold",
     fontFamily: "Gilroy, sans-serif",
+    "&:hover": {
+      background: "black",
+    },
   },
   buttonContainer: {
     marginRight: "0.5rem",
@@ -165,15 +169,15 @@ const useStyles = makeStyles((theme) => ({
     width: "240px",
   },
   drawerPaper: {
-    backgroundColor: "#E3F3FF",
+    backgroundColor: "white",
   },
   closeMenuButton: {
     marginRight: "auto",
     marginLeft: 0,
-    color: "#08184A",
+    color: "black",
   },
   sideBarImage: {
-    marginRight: "1rem",
+    marginRight: "1.5rem",
     marginBottom: "1rem",
     marginLeft: "0.5rem",
   },
@@ -181,20 +185,21 @@ const useStyles = makeStyles((theme) => ({
     width: "13rem",
   },
   svgIcon: {
-    color: "#08184A",
+    color: "black",
   },
   sideBarText: {
-    color: "#08184A",
+    color: "black",
     fontFamily: "Gilroy, sans-serif",
     fontWeight: "bold",
     fontSize: "0.95rem",
   },
   divider: {
-    backgroundColor: "#D6EBFA",
+    backgroundColor: "black",
+    opacity: "10%",
   },
 }));
 
-export default function navbar({ solidNav }) {
+export default function navbar({ solidNav, whiteLogo }) {
   const classes = useStyles();
   const [scrollClass, setScrollClass] = useState(classes.appBar);
   const [scrollMobileClass, setScrollMobileClass] = useState(
@@ -233,7 +238,7 @@ export default function navbar({ solidNav }) {
       },
     },
     {
-      text: "careers",
+      text: "Careers",
       link: "/careers",
       icon: <WorkIcon className={classes.svgIcon} />,
       onClick: () => {
@@ -264,8 +269,7 @@ export default function navbar({ solidNav }) {
             alt="logo"
           />
         </div>
-        <Divider className={classes.divider} />
-        {accountButton.map((item, index) => {
+        {itemsList.map((item, index) => {
           const { text, icon, link, onClick } = item;
           return (
             <Link href={link} key={index}>
@@ -289,9 +293,8 @@ export default function navbar({ solidNav }) {
             </Link>
           );
         })}
-
         <Divider className={classes.divider} />
-        {itemsList.map((item, index) => {
+        {accountButton.map((item, index) => {
           const { text, icon, link, onClick } = item;
           return (
             <Link href={link} key={index}>
@@ -345,7 +348,11 @@ export default function navbar({ solidNav }) {
       <AppBar position="fixed" className={scrollClass} elevation={shadow}>
         <div className={classes.root}>
           <div>
-            <img src="/logo.png" alt="logo" className={classes.image} />
+            <img
+              src={whiteLogo ? "/whiteLogo.svg" : "/logo.png"}
+              alt="logo"
+              className={classes.image}
+            />
           </div>
           <div className={classes.linkContainer}>
             <div className={classes.links}>

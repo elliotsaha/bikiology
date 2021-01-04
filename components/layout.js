@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
-const layout = ({ children }) => {
+const layout = ({ children, solidNav, whiteLogo }) => {
   return (
     <React.Fragment>
       <Head>
@@ -23,7 +23,7 @@ const layout = ({ children }) => {
           rel="stylesheet"
         ></link>
       </Head>
-      <Navbar />
+      <Navbar solidNav={solidNav} whiteLogo={whiteLogo} />
       <main>{children}</main>
       <Footer />
     </React.Fragment>
