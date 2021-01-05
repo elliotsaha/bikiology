@@ -110,6 +110,7 @@ const useStyles = makeStyles((theme) =>
       boxShadow: "0 0 0 0.5rem #F8BB86",
       left: "-7rem",
       top: "-5rem",
+      zIndex: -1,
     },
     objectiveCircle2: {
       background: "#F8BB86",
@@ -120,6 +121,7 @@ const useStyles = makeStyles((theme) =>
       opacity: "15%",
       right: "-5rem",
       top: "15rem",
+      zIndex: -1,
     },
     aboveFoldText: {
       marginBottom: "7rem",
@@ -241,6 +243,7 @@ const useStyles = makeStyles((theme) =>
       padding: "3rem",
       position: "relative",
       overflow: "hidden",
+      zIndex: 1,
     },
     objectivesHeader: {
       textAlign: "center",
@@ -248,6 +251,22 @@ const useStyles = makeStyles((theme) =>
       fontSize: "4rem",
       lineHeight: "4.5rem",
       paddingBottom: "5rem",
+      [theme.breakpoints.down("1050")]: {
+        marginLeft: "0.75rem",
+        marginRight: "0.75rem",
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+        margin: 0,
+      },
+      [theme.breakpoints.down("400")]: {
+        fontSize: "2rem",
+        lineHeight: "2.5rem",
+        margin: 0,
+      },
     },
     objectivesFlex: {
       display: "flex",
@@ -259,10 +278,21 @@ const useStyles = makeStyles((theme) =>
       "& > div": {
         display: "flex",
       },
+      [theme.breakpoints.down("900")]: {
+        justifyContent: "center",
+        flexDirection: "column",
+        gap: "3rem",
+      },
     },
     icon: {
       color: "white",
       fontSize: "3rem",
+      [theme.breakpoints.down("900")]: {
+        fontSize: "3.5rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        fontSize: "2rem",
+      },
     },
     iconOuter: {
       background: "#F8BB86",
@@ -273,6 +303,15 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
       paddingRight: "1rem",
       paddingLeft: "1rem",
+      height: "100%",
+      marginTop: "auto",
+      marginBottom: "auto",
+      [theme.breakpoints.down("900")]: {
+        padding: "1.5rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        padding: "1rem",
+      },
     },
     objectiveTitle: {
       fontWeight: "bold",
@@ -282,6 +321,18 @@ const useStyles = makeStyles((theme) =>
       lineHeight: "2.5rem",
       color: "#525252",
       maxWidth: "10rem",
+      [theme.breakpoints.down("1050")]: {
+        fontSize: "1.75rem",
+        lineHeight: "2rem",
+      },
+      [theme.breakpoints.down("900")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        fontSize: "1.75rem",
+        lineHeight: "2rem",
+      },
     },
   })
 );
