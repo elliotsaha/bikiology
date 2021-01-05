@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
+      overflow: "hidden",
     },
     aboveFold: {
       textAlign: "center",
@@ -27,6 +28,31 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "90rem",
       lineHeight: "8rem",
       marginBottom: 0,
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "5.5rem",
+        lineHeight: "6rem",
+        maxWidth: "70rem",
+      },
+      [theme.breakpoints.down("950")]: {
+        fontSize: "4.5rem",
+        lineHeight: "5rem",
+        maxWidth: "55rem",
+      },
+      [theme.breakpoints.down("770")]: {
+        fontSize: "3.5rem",
+        lineHeight: "4rem",
+        maxWidth: "45rem",
+        marginRight: "1.5rem",
+        marginLeft: "1.5rem",
+      },
+      [theme.breakpoints.down("430")]: {
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
+      [theme.breakpoints.down("380")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
     },
     aboveFoldSub: {
       textTransform: "uppercase",
@@ -37,6 +63,10 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "1rem",
       marginTop: "0.5rem",
       marginBottom: "2rem",
+      [theme.breakpoints.down("650")]: {
+        fontSize: "1rem",
+        letterSpacing: "0.7rem",
+      },
     },
     aboveFoldCircle3: {
       background: "#F8BB86",
@@ -89,10 +119,38 @@ const useStyles = makeStyles((theme) =>
       fontSize: "3rem",
       fontWeight: "bold",
       maxWidth: "100rem",
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
+      [theme.breakpoints.down("900")]: {
+        fontSize: "2rem",
+        lineHeight: "2.5rem",
+      },
+      [theme.breakpoints.down("550")]: {
+        fontSize: "1.75rem",
+        lineHeight: "2rem",
+      },
+      [theme.breakpoints.down("350")]: {
+        fontSize: "1.4rem",
+        lineHeight: "2rem",
+      },
     },
     weHireSmall: {
       fontSize: "1.25rem",
       marginTop: "1rem",
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "1.5rem",
+        lineHeight: "2rem",
+      },
+      [theme.breakpoints.down("900")]: {
+        fontSize: "1.3rem",
+        lineHeight: "1.7rem",
+      },
+      [theme.breakpoints.down("550")]: {
+        fontSize: "1rem",
+        lineHeight: "1.25rem",
+      },
     },
     howToApply: {
       background: "white",
@@ -102,21 +160,52 @@ const useStyles = makeStyles((theme) =>
       fontSize: "4rem",
       fontWeight: "bold",
       padding: "2rem",
+      lineHeight: "4.5rem",
+      [theme.breakpoints.down("550")]: {
+        fontSize: "3rem",
+        lineHeight: "3.25rem",
+      },
     },
     howToApplyFlex: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
       gap: "4rem",
+      [theme.breakpoints.down("900")]: {
+        flexDirection: "column",
+        gap: "1rem",
+      },
+      [theme.breakpoints.down("500")]: {
+        "& > div:nth-child(1)": {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+      },
     },
     howToApplyContact: {
       maxWidth: "25rem",
       display: "flex",
       flexDirection: "column",
+      [theme.breakpoints.down("900")]: {
+        textAlign: "center",
+        maxWidth: "20rem",
+        margin: "1.1rem",
+      },
     },
     handshakeImg: {
       width: "30rem",
       opacity: "75%",
+      [theme.breakpoints.down("1000")]: {
+        width: "25rem",
+        marginLeft: "3rem",
+      },
+      [theme.breakpoints.down("900")]: {
+        marginLeft: 0,
+      },
+      [theme.breakpoints.down("500")]: {
+        width: "90%",
+      },
     },
     howToApplyContactTitle: {
       fontSize: "3rem",
