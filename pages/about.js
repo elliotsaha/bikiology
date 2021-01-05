@@ -146,13 +146,32 @@ const useStyles = makeStyles((theme) =>
       lineHeight: "4rem",
       maxWidth: "80rem",
       marginBottom: "2rem",
+      [theme.breakpoints.down("900")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        fontSize: "2.1rem",
+        lineHeight: "2.7rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        fontSize: "1.8rem",
+        lineHeight: "2.5rem",
+      },
     },
     mark: {
       display: "inline-block",
       backgroundColor: "#F8BB86",
       paddingBottom: "1.9rem",
-      lineHeight: 0,
+      lineHeight: "0",
       color: "white",
+      whiteSpace: "nowrap",
+      [theme.breakpoints.down("900")]: {
+        paddingBottom: "1.4rem",
+      },
+      [theme.breakpoints.down("450")]: {
+        paddingBottom: "1.2rem",
+      },
     },
     belowFold: {
       backgroundColor: "black",
@@ -408,8 +427,8 @@ export default function about() {
         <div className={classes.coreValues}>
           <div className={classes.coreValuesTitle}>
             Our core values contain{" "}
-            <mark className={classes.mark}>integrity</mark>,{" "}
-            <mark className={classes.mark}>innovation</mark>,{" "}
+            <mark className={classes.mark}>integrity,</mark>{" "}
+            <mark className={classes.mark}>innovation,</mark>{" "}
             <mark className={classes.mark}>efficiency</mark> and{" "}
             <mark className={classes.mark}>cost-effectiveness.</mark>
           </div>
