@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       fontFamily: "Gilroy, sans-serif",
+      overflow: "hidden",
     },
     aboveFold: {
       textAlign: "center",
@@ -31,6 +32,31 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "90rem",
       lineHeight: "8rem",
       marginBottom: 0,
+      [theme.breakpoints.down("1280")]: {
+        fontSize: "5.5rem",
+        lineHeight: "6rem",
+        maxWidth: "70rem",
+      },
+      [theme.breakpoints.down("950")]: {
+        fontSize: "4.5rem",
+        lineHeight: "5rem",
+        maxWidth: "55rem",
+      },
+      [theme.breakpoints.down("770")]: {
+        fontSize: "3.5rem",
+        lineHeight: "4rem",
+        maxWidth: "45rem",
+        marginRight: "1.5rem",
+        marginLeft: "1.5rem",
+      },
+      [theme.breakpoints.down("430")]: {
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
+      [theme.breakpoints.down("380")]: {
+        fontSize: "2.5rem",
+        lineHeight: "3rem",
+      },
     },
     aboveFoldSub: {
       textTransform: "uppercase",
@@ -41,6 +67,10 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "1rem",
       marginTop: "0.5rem",
       marginBottom: "2rem",
+      [theme.breakpoints.down("650")]: {
+        fontSize: "1rem",
+        letterSpacing: "0.7rem",
+      },
     },
     aboveFoldCircle3: {
       background: "#F8BB86",
@@ -102,6 +132,10 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "auto",
       lineHeight: "2.5rem",
       color: "#525252",
+      [theme.breakpoints.down("500")]: {
+        fontSize: "1.75rem",
+        marginLeft: "0.5rem",
+      },
     },
     servicesText: {
       color: "grey",
@@ -116,6 +150,8 @@ const useStyles = makeStyles((theme) =>
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
+      marginLeft: "2rem",
+      marginRight: "2rem",
     },
     servicesRoot: {
       display: "flex",
@@ -124,10 +160,44 @@ const useStyles = makeStyles((theme) =>
       marginLeft: "auto",
       marginRight: "auto",
       marginTop: "5rem",
+      marginBottom: "5rem",
+      gap: "10rem",
+      overflow: "hidden",
+      zIndex: 2,
+      [theme.breakpoints.down("1440")]: {
+        gap: "5rem",
+      },
+      [theme.breakpoints.down("1150")]: {
+        gap: "1rem",
+      },
+      [theme.breakpoints.down("1000")]: {
+        justifyContent: "center",
+        flexDirection: "column",
+        marginBottom: "3rem",
+        gap: "3.5rem",
+      },
+    },
+    servicesRootSecond: {
+      display: "flex",
+      justifyContent: "space-around",
+      maxWidth: "90rem",
+      marginLeft: "auto",
+      marginRight: "auto",
       marginBottom: "8.5rem",
       gap: "10rem",
       overflow: "hidden",
       zIndex: 2,
+      [theme.breakpoints.down("1440")]: {
+        gap: "5rem",
+      },
+      [theme.breakpoints.down("1150")]: {
+        gap: "1rem",
+      },
+      [theme.breakpoints.down("1000")]: {
+        justifyContent: "center",
+        flexDirection: "column",
+        gap: "3.5rem",
+      },
     },
     servicesCircle: {
       position: "absolute",
@@ -162,6 +232,12 @@ const useStyles = makeStyles((theme) =>
       fontSize: "4.25rem",
       lineHeight: "4.75rem",
       color: "#525252",
+      marginLeft: "0.5rem",
+      marginRight: "0.5rem",
+      [theme.breakpoints.down("500")]: {
+        fontSize: "3rem",
+        lineHeight: "3.5rem",
+      },
     },
 
     productsRoot: {
@@ -176,15 +252,35 @@ const useStyles = makeStyles((theme) =>
     },
     productsHeader: {
       fontWeight: "bold",
-      fontSize: "4rem",
-      marginBottom: "-0.5rem",
+      fontSize: "3rem",
+      textAlign: "center",
+      marginRight: "0.5rem",
+      marginLeft: "0.5rem",
+      lineHeight: "3.25rem",
+      marginBottom: "0.5rem",
+      [theme.breakpoints.down("600")]: {
+        fontSize: "2.5rem",
+        marginRight: 0,
+        marginLeft: 0,
+      },
+      [theme.breakpoints.down("325")]: {
+        fontSize: "2.2rem",
+        lineHeight: "2.7rem",
+        marginRight: 0,
+        marginLeft: 0,
+      },
     },
     productsSub: {
       fontWeight: "bold",
-      marginBottom: "2rem",
-      fontSize: "0.95rem",
+      marginBottom: "1.8rem",
+      fontSize: "1rem",
       textTransform: "uppercase",
       letterSpacing: "0.35rem",
+      textAlign: "center",
+      [theme.breakpoints.down("325")]: {
+        fontSize: "0.95rem",
+        lineHeight: "1.2rem",
+      },
     },
     productsGrid: {
       display: "grid",
@@ -194,6 +290,14 @@ const useStyles = makeStyles((theme) =>
       gridTemplateColumns: "1fr 1fr 1fr",
       gridTemplateRows: "1fr 1fr",
       marginBottom: "2rem",
+      [theme.breakpoints.down("750")]: {
+        gridTemplateColumns: "1fr 1fr",
+        gridTemplateRows: "1fr 1fr 1fr",
+      },
+      [theme.breakpoints.down("500")]: {
+        gridTemplateColumns: "1fr",
+        gap: "1rem",
+      },
     },
     productsGridChild: {
       position: "relative",
@@ -206,6 +310,22 @@ const useStyles = makeStyles((theme) =>
         margin: 0,
         objectFit: "cover",
         transition: "all 0.4s ease",
+        [theme.breakpoints.down("750")]: {
+          opacity: "55%",
+        },
+        [theme.breakpoints.down("1000")]: {
+          width: "17.5rem",
+          height: "17.5rem",
+        },
+        [theme.breakpoints.down("900")]: {
+          width: "15rem",
+          height: "15rem",
+        },
+        [theme.breakpoints.down("500")]: {
+          width: "100%",
+          height: "20rem",
+          borderRadius: "0.5rem",
+        },
       },
       "& div": {
         position: "absolute",
@@ -215,6 +335,10 @@ const useStyles = makeStyles((theme) =>
         display: "none",
         transition: "all 0.4s ease",
         opacity: "0%",
+        [theme.breakpoints.down("750")]: {
+          display: "block",
+          opacity: "100%",
+        },
       },
       "&:hover": {
         "& img": {
@@ -256,6 +380,52 @@ export default function productsandservices() {
           <div className={classes.servicesOutline}></div>
           <div className={classes.servicesHeader}>Our Services</div>
           <div className={classes.servicesRoot}>
+            <div className={classes.servicesOuter}>
+              <div>
+                <div className={classes.servicesInner}>
+                  <div className={classes.iconOuter}>
+                    <DataUsageIcon className={classes.icon} />
+                  </div>
+                  <div className={classes.servicesTitle}>Exporting</div>
+                </div>
+                <div className={classes.servicesText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mauris turpis, semper quis ultricies sed.
+                </div>
+              </div>
+            </div>
+
+            <div className={classes.servicesOuter}>
+              <div>
+                <div className={classes.servicesInner}>
+                  <div className={classes.iconOuter}>
+                    <LocalAtmIcon className={classes.icon} />
+                  </div>
+                  <div className={classes.servicesTitle}>Consultancy</div>
+                </div>
+                <div className={classes.servicesText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mauris turpis, semper quis ultricies sed.
+                </div>
+              </div>
+            </div>
+
+            <div className={classes.servicesOuter}>
+              <div>
+                <div className={classes.servicesInner}>
+                  <div className={classes.iconOuter}>
+                    <AccountBalanceIcon className={classes.icon} />
+                  </div>
+                  <div className={classes.servicesTitle}>Importing</div>
+                </div>
+                <div className={classes.servicesText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  mauris turpis, semper quis ultricies sed.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.servicesRootSecond}>
             <div className={classes.servicesOuter}>
               <div>
                 <div className={classes.servicesInner}>
