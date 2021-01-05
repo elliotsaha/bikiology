@@ -162,20 +162,75 @@ const useStyles = makeStyles((theme) =>
       gap: "4rem",
       paddingTop: "8rem",
       paddingBottom: "8rem",
+      [theme.breakpoints.down("1250")]: {
+        gap: "2rem",
+      },
+      [theme.breakpoints.down("940")]: {
+        flexDirection: "column",
+        justifyContent: "start",
+        alignItems: "start",
+        paddingTop: "3rem",
+        paddingBottom: "3rem",
+      },
     },
     belowFoldTitle: {
       fontSize: "3rem",
       fontWeight: "bold",
       maxWidth: "70rem",
       lineHeight: "3.5rem",
+      [theme.breakpoints.down("1250")]: {
+        fontSize: "2.25rem",
+        lineHeight: "2.5rem",
+      },
+      [theme.breakpoints.down("940")]: {
+        marginLeft: "-1rem",
+        marginBottom: "0.5rem",
+      },
+      [theme.breakpoints.down("700")]: {
+        fontSize: "1.75rem",
+        lineHeight: "2rem",
+        marginTop: "-1rem",
+      },
+      [theme.breakpoints.down("500")]: {
+        fontSize: "1.5rem",
+        lineHeight: "1.85rem",
+      },
     },
     belowFoldPara: {
       color: "#f5f5f5",
       fontSize: "1.5rem",
       maxWidth: "60rem",
+      [theme.breakpoints.down("1250")]: {
+        fontSize: "1.25rem",
+        lineHeight: "1.75rem",
+      },
+      [theme.breakpoints.down("940")]: {
+        marginLeft: "-1rem",
+      },
+      [theme.breakpoints.down("700")]: {
+        fontSize: "1.3rem",
+        lineHeight: "1.5rem",
+      },
+      [theme.breakpoints.down("500")]: {
+        fontSize: "1rem",
+        lineHeight: "1.25rem",
+      },
     },
     logo: {
       width: "13.5rem",
+      [theme.breakpoints.down("1250")]: {
+        width: "12rem",
+      },
+      [theme.breakpoints.down("940")]: {
+        width: "14rem",
+        marginLeft: "-1.2rem",
+      },
+      [theme.breakpoints.down("700")]: {
+        width: "12rem",
+      },
+      [theme.breakpoints.down("500")]: {
+        width: "10rem",
+      },
     },
     objectives: {
       display: "flex",
