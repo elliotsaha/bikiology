@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) =>
       flexDirection: "column",
       paddingTop: "7.5rem",
       borderBottomRightRadius: "0.25rem",
-      [theme.breakpoints.down("1400")]: {
+      [theme.breakpoints.down("1550")]: {
         maxWidth: "35rem",
       },
       [theme.breakpoints.down("1300")]: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) =>
       textAlign: "center",
       marginRight: "1.25rem",
       marginLeft: "1.25rem",
-      [theme.breakpoints.down("1400")]: {
+      [theme.breakpoints.down("1550")]: {
         fontSize: "2.5rem",
         lineHeight: "3rem",
         maxWidth: "30rem",
