@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) =>
         display: "grid",
         gridTemplateColumns: "1fr",
         maxWidth: "55rem",
+        marginLeft: "-2rem",
       },
     },
     logoRoot: {
@@ -40,6 +41,10 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
       width: "100%",
       marginBottom: "0.5rem",
+      [theme.breakpoints.down("810")]: {
+        marginLeft: "-0.5rem",
+        marginBottom: "1rem",
+      },
     },
     logo: {
       width: "6rem",
@@ -48,6 +53,9 @@ const useStyles = makeStyles((theme) =>
       textAlign: "center",
       marginRight: "0.8rem",
       fontWeight: "bolder",
+      [theme.breakpoints.down("810")]: {
+        textAlign: "left",
+      },
     },
     section: {
       marginTop: "2rem",

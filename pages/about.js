@@ -30,22 +30,22 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "90rem",
       lineHeight: "8rem",
       marginBottom: 0,
-      [theme.breakpoints.down("1280")]: {
+      [theme.breakpoints.down("1550")]: {
         fontSize: "5.5rem",
         lineHeight: "6rem",
         maxWidth: "70rem",
       },
-      [theme.breakpoints.down("950")]: {
+      [theme.breakpoints.down("1400")]: {
         fontSize: "4.5rem",
         lineHeight: "5rem",
         maxWidth: "55rem",
       },
-      [theme.breakpoints.down("770")]: {
+      [theme.breakpoints.down("900")]: {
         fontSize: "3.5rem",
         lineHeight: "4rem",
         maxWidth: "45rem",
-        marginRight: "1.5rem",
-        marginLeft: "1.5rem",
+        marginRight: "1.75rem",
+        marginLeft: "1.75rem",
       },
       [theme.breakpoints.down("430")]: {
         fontSize: "3rem",
@@ -139,6 +139,18 @@ const useStyles = makeStyles((theme) =>
       paddingTop: "10rem",
       paddingBottom: "10rem",
       flexDirection: "column",
+      [theme.breakpoints.down("600")]: {
+        paddingTop: "7rem",
+        paddingBottom: "7rem",
+      },
+      [theme.breakpoints.down("550")]: {
+        paddingTop: "5rem",
+        paddingBottom: "5rem",
+      },
+      [theme.breakpoints.down("360")]: {
+        paddingTop: "3rem",
+        paddingBottom: "3rem",
+      },
     },
     coreValuesTitle: {
       fontSize: "3.5rem",
@@ -146,17 +158,25 @@ const useStyles = makeStyles((theme) =>
       lineHeight: "4rem",
       maxWidth: "80rem",
       marginBottom: "2rem",
-      [theme.breakpoints.down("900")]: {
-        fontSize: "2.5rem",
-        lineHeight: "3rem",
+      [theme.breakpoints.down("600")]: {
+        fontSize: "3.5rem",
+        lineHeight: "4rem",
       },
-      [theme.breakpoints.down("450")]: {
-        fontSize: "2.1rem",
-        lineHeight: "2.7rem",
+      [theme.breakpoints.down("550")]: {
+        fontSize: "2.7rem",
+        lineHeight: "3.2rem",
       },
-      [theme.breakpoints.down("450")]: {
-        fontSize: "1.8rem",
+      [theme.breakpoints.down("430")]: {
+        fontSize: "2.2rem",
+        lineHeight: "2.8rem",
+      },
+      [theme.breakpoints.down("360")]: {
+        fontSize: "2rem",
         lineHeight: "2.5rem",
+      },
+      [theme.breakpoints.down("320")]: {
+        fontSize: "1.8rem",
+        lineHeight: "2.3rem",
       },
     },
     mark: {
@@ -166,11 +186,14 @@ const useStyles = makeStyles((theme) =>
       lineHeight: "0",
       color: "white",
       whiteSpace: "nowrap",
-      [theme.breakpoints.down("900")]: {
+      [theme.breakpoints.down("600")]: {
         paddingBottom: "1.4rem",
       },
-      [theme.breakpoints.down("450")]: {
-        paddingBottom: "1.2rem",
+      [theme.breakpoints.down("550")]: {
+        paddingBottom: "1.3rem",
+      },
+      [theme.breakpoints.down("320")]: {
+        paddingBottom: "1.1rem",
       },
     },
     belowFold: {
@@ -180,11 +203,17 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      gap: "4rem",
+      "& > div": {
+        marginRight: "1.5rem",
+        marginLeft: "1.5rem",
+      },
       paddingTop: "8rem",
       paddingBottom: "8rem",
       [theme.breakpoints.down("1250")]: {
-        gap: "2rem",
+        "& > div": {
+          marginRight: "1.5rem",
+          marginLeft: "1.5rem",
+        },
       },
       [theme.breakpoints.down("940")]: {
         flexDirection: "column",
@@ -192,6 +221,11 @@ const useStyles = makeStyles((theme) =>
         alignItems: "start",
         paddingTop: "3rem",
         paddingBottom: "3rem",
+        "& > div": {
+          marginBottom: "1rem",
+          marginTop: "1rem",
+          marginLeft: 0,
+        },
       },
     },
     belowFoldTitle: {
@@ -300,7 +334,16 @@ const useStyles = makeStyles((theme) =>
       [theme.breakpoints.down("900")]: {
         justifyContent: "center",
         flexDirection: "column",
-        gap: "3rem",
+        marginTop: "-2.5rem",
+        "& > div": {
+          margin: "2rem",
+          marginLeft: 0,
+          marginRight: 0,
+        },
+      },
+      [theme.breakpoints.down("450")]: {
+        marginTop: "-5rem",
+        marginBottom: "-5rem",
       },
     },
     icon: {

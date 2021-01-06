@@ -92,7 +92,11 @@ const useStyles = makeStyles((theme) =>
     input: {},
     textFieldFlex: {
       display: "flex",
-      gap: "1.25rem",
+      "& > div": {
+        marginRight: "0.5rem",
+        marginBottom: "0.25rem",
+        marginTop: "0.25rem",
+      },
       marginBottom: "1.5rem",
       width: "100%",
       [theme.breakpoints.down("580")]: {
@@ -420,7 +424,7 @@ export default function contact() {
                           />
                         </div>
                       </div>
-                      
+
                       <div className={classes.textFieldFlex}>
                         <Button
                           className={classes.button}

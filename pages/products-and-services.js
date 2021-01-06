@@ -32,22 +32,22 @@ const useStyles = makeStyles((theme) =>
       maxWidth: "90rem",
       lineHeight: "8rem",
       marginBottom: 0,
-      [theme.breakpoints.down("1280")]: {
+      [theme.breakpoints.down("1550")]: {
         fontSize: "5.5rem",
         lineHeight: "6rem",
         maxWidth: "70rem",
       },
-      [theme.breakpoints.down("950")]: {
+      [theme.breakpoints.down("1400")]: {
         fontSize: "4.5rem",
         lineHeight: "5rem",
         maxWidth: "55rem",
       },
-      [theme.breakpoints.down("770")]: {
+      [theme.breakpoints.down("900")]: {
         fontSize: "3.5rem",
         lineHeight: "4rem",
         maxWidth: "45rem",
-        marginRight: "1.5rem",
-        marginLeft: "1.5rem",
+        marginRight: "1.75rem",
+        marginLeft: "1.75rem",
       },
       [theme.breakpoints.down("430")]: {
         fontSize: "3rem",
@@ -70,6 +70,8 @@ const useStyles = makeStyles((theme) =>
       [theme.breakpoints.down("650")]: {
         fontSize: "1rem",
         letterSpacing: "0.7rem",
+        marginLeft: "1.2rem",
+        marginRight: "1.2rem",
       },
     },
     aboveFoldCircle3: {
@@ -79,9 +81,13 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "15%",
-      bottom: "5.5rem",
+      bottom: "2.5rem",
       right: "-7.5rem",
       zIndex: -1,
+      [theme.breakpoints.down("550")]: {
+        width: "16rem",
+        height: "16rem",
+      },
     },
     aboveFoldIcon: {
       position: "absolute",
@@ -99,8 +105,12 @@ const useStyles = makeStyles((theme) =>
       opacity: "20%",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       left: "-5rem",
-      top: "12rem",
+      top: "7rem",
       zIndex: -1,
+      [theme.breakpoints.down("550")]: {
+        width: "16rem",
+        height: "16rem",
+      },
     },
     aboveFoldText: {
       marginBottom: "7rem",
@@ -161,20 +171,34 @@ const useStyles = makeStyles((theme) =>
       marginRight: "auto",
       marginTop: "5rem",
       marginBottom: "5rem",
-      gap: "10rem",
+      "& > div": {
+        margin: "2rem",
+        marginBottom: "1rem",
+        marginLeft: "2.5rem",
+      },
       overflow: "hidden",
       zIndex: 2,
       [theme.breakpoints.down("1440")]: {
-        gap: "5rem",
+        "& > div": {
+          margin: "2.25rem",
+          marginTop: "1rem",
+          marginLeft: "2.5rem",
+        },
       },
       [theme.breakpoints.down("1150")]: {
-        gap: "1rem",
+        "& > div": {
+          margin: "1.6rem",
+          marginTop: "1rem",
+          marginLeft: "2.5rem",
+        },
       },
       [theme.breakpoints.down("1000")]: {
         justifyContent: "center",
         flexDirection: "column",
-        marginBottom: "3rem",
-        gap: "3.5rem",
+        marginTop: "1.5rem",
+        "& > div": {
+          margin: "2rem",
+        },
       },
     },
     servicesRootSecond: {
@@ -184,19 +208,34 @@ const useStyles = makeStyles((theme) =>
       marginLeft: "auto",
       marginRight: "auto",
       marginBottom: "8.5rem",
-      gap: "10rem",
+      "& > div": {
+        margin: "2rem",
+        marginTop: "1rem",
+        marginLeft: "2.5rem",
+      },
       overflow: "hidden",
       zIndex: 2,
       [theme.breakpoints.down("1440")]: {
-        gap: "5rem",
+        "& > div": {
+          margin: "2.25rem",
+          marginTop: "1rem",
+          marginLeft: "2.5rem",
+        },
       },
       [theme.breakpoints.down("1150")]: {
-        gap: "1rem",
+        "& > div": {
+          margin: "1.6rem",
+          marginTop: "1rem",
+          marginLeft: "2.5rem",
+        },
       },
       [theme.breakpoints.down("1000")]: {
         justifyContent: "center",
         flexDirection: "column",
-        gap: "3.5rem",
+        marginTop: "-5rem",
+        "& > div": {
+          margin: "2rem",
+        },
       },
     },
     servicesCircle: {
