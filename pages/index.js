@@ -31,17 +31,17 @@ const useStyles = makeStyles((theme) =>
       fontWeight: "bold",
       textAlign: "center",
       maxWidth: "90rem",
-      [theme.breakpoints.down("1280")]: {
+      [theme.breakpoints.down("1550")]: {
         fontSize: "5.5rem",
         lineHeight: "6rem",
         maxWidth: "70rem",
       },
-      [theme.breakpoints.down("950")]: {
+      [theme.breakpoints.down("1050")]: {
         fontSize: "4.5rem",
         lineHeight: "5rem",
         maxWidth: "55rem",
       },
-      [theme.breakpoints.down("770")]: {
+      [theme.breakpoints.down("800")]: {
         fontSize: "3.5rem",
         lineHeight: "4rem",
         maxWidth: "45rem",
@@ -158,18 +158,25 @@ const useStyles = makeStyles((theme) =>
         width: "20rem",
         marginRight: "15rem",
       },
-      [theme.breakpoints.down("600")]: {
-        marginRight: "10vw",
-        width: "15rem",
-      },
-      [theme.breakpoints.down("350")]: {
+      [theme.breakpoints.down("700")]: {
         marginLeft: 0,
-        width: "12.5rem",
-        borderRadius: "0 0.25rem 0.25rem 0",
+        width: "20.5rem",
+        borderRadius: "0 0.5rem 0.5rem 0",
+      },
+      [theme.breakpoints.down("600")]: {
+        width: "16.5rem",
+      },
+      [theme.breakpoints.down("435")]: {
+        width: "13.5rem",
+        marginTop: "3rem",
+        marginBottom: "3rem",
+      },
+      [theme.breakpoints.down("340")]: {
+        width: "11.5rem",
       },
     },
     belowFoldImageContainer: {
-      [theme.breakpoints.down("350")]: {
+      [theme.breakpoints.down("700")]: {
         marginLeft: 0,
         width: "100%",
       },
@@ -196,17 +203,29 @@ const useStyles = makeStyles((theme) =>
         maxWidth: "25rem",
         marginRight: "3rem",
       },
+      [theme.breakpoints.down("700")]: {
+        marginLeft: "12rem",
+        fontSize: "2.25rem",
+        lineHeight: "2.5rem",
+        maxWidth: "25rem",
+      },
       [theme.breakpoints.down("600")]: {
-        marginLeft: "35vw",
+        marginLeft: "6rem",
         fontSize: "2rem",
         lineHeight: "2.5rem",
         maxWidth: "25rem",
       },
-      [theme.breakpoints.down("500")]: {
-        marginLeft: "35vw",
-        fontSize: "1.6rem",
-        lineHeight: "2.1rem",
-        width: "15rem",
+      [theme.breakpoints.down("435")]: {
+        marginLeft: "4rem",
+        fontSize: "1.75rem",
+        lineHeight: "2.25rem",
+        marginRight: "1rem",
+      },
+      [theme.breakpoints.down("340")]: {
+        marginLeft: "2rem",
+        fontSize: "1.75rem",
+        lineHeight: "2.25rem",
+        marginRight: "0.75rem",
       },
     },
     offerInner: {
