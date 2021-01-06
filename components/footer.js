@@ -12,19 +12,22 @@ const useStyles = makeStyles((theme) =>
       fontSize: "1.1rem",
       display: "flex",
       justifyContent: "center",
-      gap: "5.5rem",
+      "& > div": {
+        margin: "1.75rem",
+      },
       padding: "3rem",
       [theme.breakpoints.down("1445")]: {
         display: "grid",
         gridTemplateColumns: "1fr 1fr 1fr",
         gridTemplateRows: "1fr 1fr",
-        gap: "1rem",
+        "& > div": {
+          margin: "1rem",
+        },
         maxWidth: "55rem",
       },
       [theme.breakpoints.down("810")]: {
         display: "grid",
         gridTemplateColumns: "1fr",
-        gap: "1rem",
         maxWidth: "55rem",
       },
     },
@@ -68,7 +71,10 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      gap: "1rem",
+      "& > div": {
+        marginRight: "0.3rem",
+        marginLeft: "0.3rem",
+      },
       padding: "0.5rem",
       borderRadius: "0.4rem",
       paddingRight: "1.25rem",
