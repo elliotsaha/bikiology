@@ -278,19 +278,31 @@ const useStyles = makeStyles((theme) =>
       marginRight: "auto",
       marginTop: "8.5rem",
       marginBottom: "8.5rem",
-      gap: "10rem",
+      "& > div": {
+        marginLeft: "3rem",
+        marginRight: "3rem",
+      },
       overflow: "hidden",
       zIndex: 2,
       [theme.breakpoints.down("1440")]: {
-        gap: "5rem",
+        "& > div": {
+          marginLeft: "5rem",
+          marginRight: "5rem",
+        },
       },
-      [theme.breakpoints.down("1000")]: {
-        gap: "1rem",
+      [theme.breakpoints.down("1100")]: {
+        "& > div": {
+          marginLeft: "2rem",
+          marginRight: "2rem",
+        },
       },
-      [theme.breakpoints.down("920")]: {
+      [theme.breakpoints.down("950")]: {
         justifyContent: "center",
         flexDirection: "column",
-        gap: "3.5rem",
+        "& > div": {
+          marginTop: "2rem",
+          marginBottom: "2rem",
+        },
       },
     },
     offerCircle: {
