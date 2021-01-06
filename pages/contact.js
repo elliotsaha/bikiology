@@ -200,7 +200,7 @@ export default function contact() {
                     } else if (phoneParse === undefined) {
                       errors.phone = "Not Valid Input";
                     } else if (phoneParse.isValid() === false) {
-                      errors.phone = "Not Valid Canadian Number";
+                      errors.phone = "Not Valid Phone Number";
                     }
                     return errors;
                   }}

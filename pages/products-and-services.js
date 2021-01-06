@@ -8,6 +8,9 @@ import LocalAtmIcon from "@material-ui/icons/LocalAtm";
 import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import products from "../components/products.json";
+import BuildIcon from "@material-ui/icons/Build";
+import BusinessIcon from "@material-ui/icons/Business";
+import PhonelinkIcon from "@material-ui/icons/Phonelink";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -133,6 +136,9 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      height: "100%",
+      marginTop: "auto",
+      marginBottom: "auto",
     },
     servicesTitle: {
       fontWeight: "bold",
@@ -192,7 +198,7 @@ const useStyles = makeStyles((theme) =>
           marginLeft: "2.5rem",
         },
       },
-      [theme.breakpoints.down("1000")]: {
+      [theme.breakpoints.down("1125")]: {
         justifyContent: "center",
         flexDirection: "column",
         marginTop: "1.5rem",
@@ -229,7 +235,7 @@ const useStyles = makeStyles((theme) =>
           marginLeft: "2.5rem",
         },
       },
-      [theme.breakpoints.down("1000")]: {
+      [theme.breakpoints.down("1125")]: {
         justifyContent: "center",
         flexDirection: "column",
         marginTop: "-5rem",
@@ -352,7 +358,7 @@ const useStyles = makeStyles((theme) =>
         [theme.breakpoints.down("750")]: {
           opacity: "55%",
         },
-        [theme.breakpoints.down("1000")]: {
+        [theme.breakpoints.down("1125")]: {
           width: "17.5rem",
           height: "17.5rem",
         },
@@ -469,9 +475,11 @@ export default function productsandservices() {
               <div>
                 <div className={classes.servicesInner}>
                   <div className={classes.iconOuter}>
-                    <DataUsageIcon className={classes.icon} />
+                    <BuildIcon className={classes.icon} />
                   </div>
-                  <div className={classes.servicesTitle}>Exporting</div>
+                  <div className={classes.servicesTitle}>
+                    Engineering Services
+                  </div>
                 </div>
                 <div className={classes.servicesText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -484,9 +492,11 @@ export default function productsandservices() {
               <div>
                 <div className={classes.servicesInner}>
                   <div className={classes.iconOuter}>
-                    <LocalAtmIcon className={classes.icon} />
+                    <BusinessIcon className={classes.icon} />
                   </div>
-                  <div className={classes.servicesTitle}>Consultancy</div>
+                  <div className={classes.servicesTitle}>
+                    Industrial Surplus Sales
+                  </div>
                 </div>
                 <div className={classes.servicesText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -499,9 +509,11 @@ export default function productsandservices() {
               <div>
                 <div className={classes.servicesInner}>
                   <div className={classes.iconOuter}>
-                    <AccountBalanceIcon className={classes.icon} />
+                    <PhonelinkIcon className={classes.icon} />
                   </div>
-                  <div className={classes.servicesTitle}>Importing</div>
+                  <div className={classes.servicesTitle}>
+                    International Marketing
+                  </div>
                 </div>
                 <div className={classes.servicesText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
