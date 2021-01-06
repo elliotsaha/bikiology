@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
-
+import Link from "next/link";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -105,18 +105,30 @@ export default function footer() {
         </div>{" "}
         <div className={classes.section}>
           <div className={classes.header}>Further Information</div>
-          <div className={classes.link}>Terms & Conditions</div>
-          <div className={classes.link}>Privacy Policy</div>
+          <div className={classes.link}>
+            <Link href="/terms-and-conditions">Terms & Conditions</Link>
+          </div>
+          <div className={classes.link}>
+            <Link href="/privacypolicy">Privacy Policy</Link>
+          </div>
         </div>
         <div className={classes.section}>
           <div className={classes.header}>Company</div>
-          <div className={classes.link}>About Us</div>
-          <div className={classes.link}>Careers</div>
-          <div className={classes.link}>Contact Us</div>
+          <div className={classes.link}>
+            <Link href="/about">About Us</Link>
+          </div>
+          <div className={classes.link}>
+            <Link href="/careers">Careers</Link>
+          </div>
+          <div className={classes.link}>
+            <Link href="/contact">Contact Us</Link>
+          </div>
         </div>{" "}
         <div className={classes.section}>
           <div className={classes.header}>Customers</div>
-          <div className={classes.link}>Products & Services</div>
+          <div className={classes.link}>
+            <Link href="/products-and-services">Products & Services</Link>
+          </div>
         </div>
         <div className={classes.section}>
           <div className={classes.header}>Follow Us</div>
