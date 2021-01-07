@@ -3,6 +3,7 @@ import { makeStyles, createStyles, withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Link from "next/link";
+import { useMediaQuery } from "react-responsive";
 
 import { useTheme } from "@material-ui/core/styles";
 import BookRoundedIcon from "@material-ui/icons/BookRounded";
@@ -205,8 +206,8 @@ export default function navbar({ solidNav, whiteLogo }) {
   const [scrollMobileClass, setScrollMobileClass] = useState(
     classes.appBarMobile
   );
+  const [whiteLogoState, setWhiteLogoState] = useState(true);
   const [shadow, setShadow] = useState(0);
-
   // Mobile Drawer
   const [mobileOpen, setMobileOpen] = useState(false);
   function handleDrawerToggle() {
@@ -332,15 +333,16 @@ export default function navbar({ solidNav, whiteLogo }) {
           setScrollClass(classes.appBarScroll);
           setScrollMobileClass(classes.appBarMobileScroll);
           setShadow(2);
+          setWhiteLogoState(false);
         } else {
           setScrollClass(classes.appBar);
           setScrollMobileClass(classes.appBarMobile);
           setShadow(0);
+          setWhiteLogoState(true);
         }
       });
     }
   }, []);
-
   const theme = useTheme();
 
   return (
@@ -349,7 +351,13 @@ export default function navbar({ solidNav, whiteLogo }) {
         <div className={classes.root}>
           <div>
             <img
-              src={whiteLogo ? "/whiteLogo.svg" : "/logo.png"}
+              src={
+                whiteLogo !== undefined
+                  ? whiteLogoState === false
+                    ? "/logo.png"
+                    : whiteLogo
+                  : "/logo.png"
+              }
               alt="logo"
               className={classes.image}
             />

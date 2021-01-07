@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "0.5rem",
     },
     link: {
-      color: "grey",
+      color: "#777777",
       fontWeight: 600,
       marginBottom: "0.5rem",
     },
@@ -104,6 +104,14 @@ const useStyles = makeStyles((theme) =>
       fontWeight: 600,
       color: "white",
     },
+    mark: {
+      display: "inline-block",
+      backgroundColor: "rgba(248, 187, 134, 0.30)",
+      paddingBottom: "0.7rem",
+      lineHeight: "0",
+      color: "#777777",
+      whiteSpace: "nowrap",
+    },
   })
 );
 export default function footer() {
@@ -119,6 +127,9 @@ export default function footer() {
         </div>{" "}
         <div className={classes.section}>
           <div className={classes.header}>Further Information</div>
+          <div className={classes.link}>
+            <Link href="/products-and-services">Products & Services</Link>
+          </div>
           <div className={classes.link}>
             <Link href="/terms-and-conditions">Terms & Conditions</Link>
           </div>
@@ -139,9 +150,12 @@ export default function footer() {
           </div>
         </div>{" "}
         <div className={classes.section}>
-          <div className={classes.header}>Customers</div>
+          <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <Link href="/products-and-services">Products & Services</Link>
+            <div><mark className={classes.mark}>info@bikiology.com</mark></div>
+          </div>
+          <div className={classes.link}>
+            <div><mark className={classes.mark}>+ 1 780 667 6622</mark></div>
           </div>
         </div>
         <div className={classes.section}>

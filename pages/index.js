@@ -148,14 +148,18 @@ const useStyles = makeStyles((theme) =>
     },
     belowFoldImage: {
       width: "30rem",
+      height: "50rem",
       margin: 0,
-      opacity: "60%",
+      opacity: "75%",
       marginRight: "20rem",
+      objectFit: "cover",
       [theme.breakpoints.down("1050")]: {
         width: "25rem",
+        height: "42rem",
       },
       [theme.breakpoints.down("800")]: {
         width: "20rem",
+        height: "37rem",
         marginRight: "15rem",
       },
       [theme.breakpoints.down("700")]: {
@@ -165,14 +169,17 @@ const useStyles = makeStyles((theme) =>
       },
       [theme.breakpoints.down("600")]: {
         width: "16.5rem",
+        height: "33rem",
       },
       [theme.breakpoints.down("435")]: {
         width: "13.5rem",
         marginTop: "3rem",
         marginBottom: "3rem",
+        height: "30rem",
       },
       [theme.breakpoints.down("340")]: {
         width: "11.5rem",
+        height: "27rem",
       },
     },
     belowFoldImageContainer: {
@@ -485,7 +492,7 @@ export default function index() {
           <div className={classes.belowFoldTextContainer}>
             <div className={classes.belowFoldImageContainer}>
               <img
-                src="/building.png"
+                src="/FullSizeRender.jpeg"
                 alt="building"
                 className={classes.belowFoldImage}
               />

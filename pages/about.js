@@ -114,13 +114,13 @@ const useStyles = makeStyles((theme) =>
     },
     objectiveCircle2: {
       background: "#F8BB86",
-      width: "14.5rem",
-      height: "14.5rem",
+      width: "17.5rem",
+      height: "17.5rem",
       position: "absolute",
       borderRadius: "50%",
-      opacity: "15%",
+      opacity: "10%",
       right: "-5rem",
-      top: "15rem",
+      
       zIndex: -1,
     },
     aboveFoldText: {
@@ -130,17 +130,19 @@ const useStyles = makeStyles((theme) =>
       marginRight: "1.5rem",
     },
     coreValues: {
-      background: "black",
-      color: "white",
+      background: "white",
+      color: "#525252",
       display: "flex",
       padding: "5rem",
       justifyContent: "center",
       alignItems: "center",
-      paddingTop: "10rem",
+      paddingTop: "3.5rem",
       paddingBottom: "10rem",
       flexDirection: "column",
+      position: 'relative',
+      zIndex: 2,
       [theme.breakpoints.down("600")]: {
-        paddingTop: "7rem",
+        paddingTop: "3rem",
         paddingBottom: "7rem",
       },
       [theme.breakpoints.down("550")]: {
@@ -181,10 +183,10 @@ const useStyles = makeStyles((theme) =>
     },
     mark: {
       display: "inline-block",
-      backgroundColor: "#F8BB86",
+      backgroundColor: "rgba(248, 187, 134, 0.70)",
       paddingBottom: "1.9rem",
       lineHeight: "0",
-      color: "white",
+      color: "#525252",
       whiteSpace: "nowrap",
       [theme.breakpoints.down("600")]: {
         paddingBottom: "1.4rem",
@@ -203,6 +205,8 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      position: "relative",
+      zIndex: 3,
       "& > div": {
         marginRight: "1.5rem",
         marginLeft: "1.5rem",
@@ -233,6 +237,7 @@ const useStyles = makeStyles((theme) =>
       fontWeight: "bold",
       maxWidth: "70rem",
       lineHeight: "3.5rem",
+      zIndex: 3,
       [theme.breakpoints.down("1250")]: {
         fontSize: "2.25rem",
         lineHeight: "2.5rem",
@@ -295,7 +300,6 @@ const useStyles = makeStyles((theme) =>
       backgroundColor: "white",
       padding: "3rem",
       position: "relative",
-      overflow: "hidden",
       zIndex: 1,
     },
     objectivesHeader: {
@@ -442,7 +446,6 @@ export default function about() {
         </div>
         <div className={classes.objectives}>
           <div className={classes.objectiveCircle} />
-          <div className={classes.objectiveCircle2} />
           <div className={classes.objectivesHeader}>
             Our Objectives Are To Offer
           </div>
@@ -468,6 +471,7 @@ export default function about() {
           </div>
         </div>
         <div className={classes.coreValues}>
+          <div className={classes.objectiveCircle2} />
           <div className={classes.coreValuesTitle}>
             Our core values contain{" "}
             <mark className={classes.mark}>integrity,</mark>{" "}

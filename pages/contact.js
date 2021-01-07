@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import Layout from "../components/layout";
 import TextField from "@material-ui/core/TextField";
@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import { Formik } from "formik";
 import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import parsePhoneNumber from "libphonenumber-js";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -143,15 +144,22 @@ const useStyles = makeStyles((theme) =>
 );
 export default function contact() {
   const classes = useStyles();
-  const isMobile = useMediaQuery({ query: `(max-width: 1050px)` });
-
+  const isMobile = useMediaQuery({ query: `(max-width: 1049px)` });
+  const [src, setSrc] = useState();
+  useEffect(() => {
+    if (isMobile) {
+      setSrc("/logo.png");
+    } else {
+      setSrc("/whiteLogo.svg");
+    }
+  });
   return (
-    <Layout whiteLogo={isMobile ? false : true}>
+    <Layout whiteLogo={src}>
       <div className={classes.root}>
         <div className={classes.inner}>
           <div className={classes.leftPanel}>
             <div className={classes.leftPanelText}>
-              Bikiology Is Dedicated to Creating a Better Future for Everyone.
+              Bikiology is Dedicated to Creating a Better Future for Everyone.
             </div>
             <div>
               <img
@@ -205,7 +213,15 @@ export default function contact() {
                     return errors;
                   }}
                   onSubmit={(values, { setSubmitting }) => {
-                    console.log(values);
+                    axios({
+                      method: "post",
+                      url: "/api/sendmail",
+                      data: {
+                        values: values
+                      },
+                    }).then((res) => {
+                      console.log(res)
+                    })
                     setSubmitting(false);
                   }}
                   className={classes.flexCenter}
