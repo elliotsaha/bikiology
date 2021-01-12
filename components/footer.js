@@ -18,14 +18,13 @@ const useStyles = makeStyles((theme) =>
       padding: "3rem",
       [theme.breakpoints.down("1445")]: {
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
+        gridTemplateColumns: "13.5rem 15rem 10rem 20rem",
         gridTemplateRows: "1fr 1fr",
         "& > div": {
           margin: "1rem",
         },
-        maxWidth: "55rem",
       },
-      [theme.breakpoints.down("810")]: {
+      [theme.breakpoints.down("1000")]: {
         display: "grid",
         gridTemplateColumns: "1fr",
         maxWidth: "55rem",
@@ -69,6 +68,12 @@ const useStyles = makeStyles((theme) =>
       color: "#777777",
       fontWeight: 600,
       marginBottom: "0.5rem",
+    },
+    phone: {
+      fontSize: "1rem",
+      color: "#777777",
+      fontWeight: 600,
+      marginBottom: "0.1rem",
     },
     socialImg: {
       width: "3rem",
@@ -127,8 +132,23 @@ const useStyles = makeStyles((theme) =>
         marginLeft: "2rem",
         marginRight: "1rem",
         textAlign: "left",
-        maxWidth: "20rem"
+        maxWidth: "20rem",
       },
+    },
+    sectionSupport: {
+      marginTop: "2rem",
+      gridRowStart: 1,
+      gridRowEnd: 2,
+      gridColumnStart: 4,
+      height: "10rem",
+      [theme.breakpoints.down("1000")]: {
+        gridColumnStart: 1,
+        gridRowStart: 4,
+        gridRowEnd: 4
+      },
+    },
+    email: {
+      marginBottom: "-0.2rem",
     },
   })
 );
@@ -167,18 +187,24 @@ export default function footer() {
             <Link href="/contact">Contact Us</Link>
           </div>
         </div>{" "}
-        <div className={classes.section}>
+        <div className={classes.sectionSupport}>
           <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <div>
-              <mark className={classes.mark}>info@bikiology.com</mark>
-            </div>
+            <div className={classes.email}>info@bikiology.com</div>
           </div>
 
-          <div className={classes.link}>
-            <div>
-              <mark className={classes.mark}>+ 1 780 667 6622</mark>
-            </div>
+          <div className={classes.phone}>
+            <div>+ 1 780 667 6622 (Corporate office)</div>
+          </div>
+
+          <div className={classes.phone}>
+            <div>+ 1 780 667 6622 (Sales office)</div>
+          </div>
+          <div className={classes.phone}>
+            <div>+ 1 780 667 6622 (Toll free)</div>
+          </div>
+          <div className={classes.phone}>
+            <div>+ 1 780 667 6622 (Fax)</div>
           </div>
         </div>
         <div className={classes.section}>
