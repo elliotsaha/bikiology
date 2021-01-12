@@ -180,7 +180,9 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      gap: "4rem",
+      "& > div:nth-child(1)": {
+        marginRight: "4rem",
+      },
       [theme.breakpoints.down("900")]: {
         flexDirection: "column",
         gap: "1rem",
@@ -223,6 +225,7 @@ const useStyles = makeStyles((theme) =>
       marginBottom: "0.5rem",
     },
     howToApplyContactSub: {
+      fontFamily: "Gilroy, sans-serif",
       fontSize: "1.4rem",
       color: "grey",
       fontWeight: 500,

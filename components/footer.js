@@ -112,6 +112,24 @@ const useStyles = makeStyles((theme) =>
       color: "#777777",
       whiteSpace: "nowrap",
     },
+    locationRoot: {
+      textAlign: "center",
+      fontFamily: "Gilroy, sans-serif",
+      fontWeight: "bold",
+      color: "grey",
+      fontSize: "1rem",
+      maxWidth: "40rem",
+      marginLeft: "auto",
+      marginRight: "auto",
+      paddingBottom: "3rem",
+      marginTop: "-2rem",
+      [theme.breakpoints.down("810")]: {
+        marginLeft: "2rem",
+        marginRight: "1rem",
+        textAlign: "left",
+        maxWidth: "20rem"
+      },
+    },
   })
 );
 export default function footer() {
@@ -152,10 +170,15 @@ export default function footer() {
         <div className={classes.section}>
           <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <div><mark className={classes.mark}>info@bikiology.com</mark></div>
+            <div>
+              <mark className={classes.mark}>info@bikiology.com</mark>
+            </div>
           </div>
+
           <div className={classes.link}>
-            <div><mark className={classes.mark}>+ 1 780 667 6622</mark></div>
+            <div>
+              <mark className={classes.mark}>+ 1 780 667 6622</mark>
+            </div>
           </div>
         </div>
         <div className={classes.section}>
@@ -193,6 +216,11 @@ export default function footer() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={classes.locationRoot}>
+        Bikiology Inc. 21-10405 Jasper Ave, Suite # 21-B700, Standard Life
+        Building, Edmonton, AB. T5J3S2. Canada.
       </div>
     </div>
   );

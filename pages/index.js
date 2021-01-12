@@ -130,6 +130,7 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
       padding: "5rem",
       width: "100%",
+      position: 'relative',
       [theme.breakpoints.down("920")]: {
         paddingRight: 0,
         paddingLeft: 0,
@@ -189,7 +190,7 @@ const useStyles = makeStyles((theme) =>
       },
     },
     belowFoldText: {
-      marginLeft: "25rem",
+      marginLeft: "15rem",
       maxWidth: "40rem",
       color: "white",
       fontWeight: "bold",
@@ -197,39 +198,39 @@ const useStyles = makeStyles((theme) =>
       lineHeight: "4.25rem",
       position: "absolute",
       [theme.breakpoints.down("1050")]: {
-        marginLeft: "20rem",
+        marginLeft: "10rem",
         fontSize: "3rem",
         lineHeight: "3.5rem",
         maxWidth: "30rem",
         marginRight: "3rem",
       },
       [theme.breakpoints.down("800")]: {
-        marginLeft: "15rem",
+        marginLeft: "6rem",
         fontSize: "2.5rem",
         lineHeight: "3rem",
         maxWidth: "25rem",
         marginRight: "3rem",
       },
       [theme.breakpoints.down("700")]: {
-        marginLeft: "12rem",
+        marginLeft: "5rem",
         fontSize: "2.25rem",
         lineHeight: "2.5rem",
         maxWidth: "25rem",
       },
       [theme.breakpoints.down("600")]: {
-        marginLeft: "6rem",
+        marginLeft: "4rem",
         fontSize: "2rem",
         lineHeight: "2.5rem",
         maxWidth: "25rem",
       },
       [theme.breakpoints.down("435")]: {
-        marginLeft: "4rem",
+        marginLeft: "2rem",
         fontSize: "1.75rem",
         lineHeight: "2.25rem",
         marginRight: "1rem",
       },
       [theme.breakpoints.down("340")]: {
-        marginLeft: "2rem",
+        marginLeft: "1rem",
         fontSize: "1.75rem",
         lineHeight: "2.25rem",
         marginRight: "0.75rem",
@@ -271,8 +272,6 @@ const useStyles = makeStyles((theme) =>
     },
     offerOuter: {
       display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
       flexDirection: "column",
       marginRight: "2.5rem",
       marginLeft: "2.5rem",
@@ -515,8 +514,7 @@ export default function index() {
                   <div className={classes.offerTitle}>Goods</div>
                 </div>
                 <div className={classes.offerText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  Bikiology Strives at Giving Customers The Best Quality of Products and Nothing Less.
                 </div>
               </div>
             </div>
@@ -530,8 +528,7 @@ export default function index() {
                   <div className={classes.offerTitle}>Services</div>
                 </div>
                 <div className={classes.offerText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  The Services that Our Company Provides are Top of the Line and Will Help your Business Grow Exponentially.
                 </div>
               </div>
             </div>
@@ -545,8 +542,7 @@ export default function index() {
                   <div className={classes.offerTitle}>Prices</div>
                 </div>
                 <div className={classes.offerText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  Bikiology Gives the Best Prices in Canada For The Services and Products that We Provide.
                 </div>
               </div>
             </div>

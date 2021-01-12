@@ -156,15 +156,13 @@ const useStyles = makeStyles((theme) =>
     servicesText: {
       color: "grey",
       fontWeight: 600,
-      fontSize: "1.1rem",
+      fontSize: "1rem",
       marginTop: "0.8rem",
       marginLeft: "0.2rem",
       maxWidth: "30rem",
     },
     servicesOuter: {
       display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
       flexDirection: "column",
       marginLeft: "2rem",
       marginRight: "2rem",
@@ -172,11 +170,12 @@ const useStyles = makeStyles((theme) =>
     servicesRoot: {
       display: "flex",
       justifyContent: "space-around",
-      maxWidth: "90rem",
+      maxWidth: "60rem",
       marginLeft: "auto",
       marginRight: "auto",
+      paddingLeft: "4.5rem",
       marginTop: "5rem",
-      marginBottom: "5rem",
+      marginBottom: "2rem",
       "& > div": {
         margin: "2rem",
         marginBottom: "1rem",
@@ -202,6 +201,8 @@ const useStyles = makeStyles((theme) =>
         justifyContent: "center",
         flexDirection: "column",
         marginTop: "1.5rem",
+        marginBottom: "5rem",
+        paddingLeft: 0,
         "& > div": {
           margin: "2rem",
         },
@@ -210,9 +211,10 @@ const useStyles = makeStyles((theme) =>
     servicesRootSecond: {
       display: "flex",
       justifyContent: "space-around",
-      maxWidth: "90rem",
+      maxWidth: "60rem",
       marginLeft: "auto",
       marginRight: "auto",
+      paddingLeft: "4.5rem",
       marginBottom: "8.5rem",
       "& > div": {
         margin: "2rem",
@@ -239,6 +241,7 @@ const useStyles = makeStyles((theme) =>
         justifyContent: "center",
         flexDirection: "column",
         marginTop: "-5rem",
+        paddingLeft: 0,
         "& > div": {
           margin: "2rem",
         },
@@ -434,23 +437,10 @@ export default function productsandservices() {
                   <div className={classes.servicesTitle}>Exporting</div>
                 </div>
                 <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
-                </div>
-              </div>
-            </div>
-
-            <div className={classes.servicesOuter}>
-              <div>
-                <div className={classes.servicesInner}>
-                  <div className={classes.iconOuter}>
-                    <LocalAtmIcon className={classes.icon} />
-                  </div>
-                  <div className={classes.servicesTitle}>Consultancy</div>
-                </div>
-                <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  We export goods and services directly from the manufacturer,
+                  producer, wholesaler and traders of Canada and other
+                  countries, or we find direct buyers in a certain country or in
+                  any other countries globally.
                 </div>
               </div>
             </div>
@@ -464,8 +454,10 @@ export default function productsandservices() {
                   <div className={classes.servicesTitle}>Importing</div>
                 </div>
                 <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  We import products and services directly from the
+                  manufacturer, producer, wholesaler and traders into Canada and
+                  in any other countries all over the world, or we find the
+                  perfect match between end buyer & end sellers internationally.
                 </div>
               </div>
             </div>
@@ -475,36 +467,17 @@ export default function productsandservices() {
               <div>
                 <div className={classes.servicesInner}>
                   <div className={classes.iconOuter}>
-                    <BuildIcon className={classes.icon} />
+                    <LocalAtmIcon className={classes.icon} />
                   </div>
-                  <div className={classes.servicesTitle}>
-                    Engineering Services
-                  </div>
+                  <div className={classes.servicesTitle}>Consultancy</div>
                 </div>
                 <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  We do consultancy for individuals or for businesses that
+                  require help in export or import regardless of their
+                  geographical locations.
                 </div>
               </div>
             </div>
-
-            <div className={classes.servicesOuter}>
-              <div>
-                <div className={classes.servicesInner}>
-                  <div className={classes.iconOuter}>
-                    <BusinessIcon className={classes.icon} />
-                  </div>
-                  <div className={classes.servicesTitle}>
-                    Industrial Surplus Sales
-                  </div>
-                </div>
-                <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
-                </div>
-              </div>
-            </div>
-
             <div className={classes.servicesOuter}>
               <div>
                 <div className={classes.servicesInner}>
@@ -516,8 +489,9 @@ export default function productsandservices() {
                   </div>
                 </div>
                 <div className={classes.servicesText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  mauris turpis, semper quis ultricies sed.
+                  We market goods and services directly, with contract,
+                  subcontract or assist businesses to market their products &
+                  services in a certain country or internationally.
                 </div>
               </div>
             </div>
