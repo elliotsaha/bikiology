@@ -8,19 +8,103 @@
     "img": "/products/oil.jpg"
   },
   {
+    "name": "Wheat",
+    "img": "/products/wheat.jpg"
+  },
+  {
+    "name": "Soybeans (For Human & Animal Consumption)",
+    "img": "/products/soybeans.jpg"
+  },
+  {
+    "name": "Corn",
+    "img": "/products/corn.jpg"
+  },
+  {
     "name": "Scrap Metal",
     "img": "/products/scrapmetal.jpg"
   },
   {
+    "name": "Red & Green Lentils",
+    "img": "/products/red-green-lentils.jpg"
+  },
+  {
+    "name": "Sugar",
+    "img": "/products/sugar.jpg"
+  },
+  {
+    "name": "Cocoa Beans & Chocolate",
+    "img": "/products/cocoa-beans.jpg"
+  },
+  {
+    "name": "Seeds",
+    "img": "/products/seeds.jpg"
+  },
+  {
+    "name": "Pulses",
+    "img": "/products/pulses.jpeg"
+  },
+  {
+    "name": "Oil Seeds",
+    "img": "/products/oil-seeds.jpeg"
+  },
+  {
+    "name": "Metal Scraps",
+    "img": "/products/metal-scraps.jpeg"
+  },
+  {
+    "name": "Milk Powders",
+    "img": "/products/milk-powders.jpeg"
+  },
+  {
+    "name": "Wood Log & Sawn Woods",
+    "img": "/products/wood.webp"
+  },
+  {
+    "name": "Alfalfa Hays",
+    "img": "/products/alfalfa-hay.jpg"
+  },
+  {
+    "name": "Minerals & Ores",
+    "img": "/products/mineral-ores.jpg"
+  },
+  {
     "name": "Iron & Steel",
-    "img": "/products/iron.jpg"
+    "img": "/products/iron.webp"
   },
   {
     "name": "Aluminum",
     "img": "/products/aluminum.jpg"
   },
   {
-    "name": "Copper",
-    "img": "/products/copper.jpg"
+    "name": "Sheet Metal",
+    "img": "/products/sheet-metal.png"
+  },
+  {
+    "name": "Copper Ore",
+    "img": "/products/copper-ore.jpg"
+  },
+  {
+    "name": "Copper Wire",
+    "img": "/products/copper-wire.jpeg"
+  },
+  {
+    "name": "Copper Cathode",
+    "img": "/products/copper-cathode.png"
+  },
+  {
+    "name": "Hard Wood",
+    "img": "/products/hard-wood.jpeg"
+  },
+  {
+    "name": "Rough Wood",
+    "img": "/products/rough-wood.jpeg"
+  },
+  {
+    "name": "Sawn Wood",
+    "img": "/products/sawn-wood.jpeg"
+  },
+  {
+    "name": "Soft Wood",
+    "img": "/products/soft-wood.jpeg"
   }
 ]

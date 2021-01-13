@@ -502,7 +502,7 @@ export default function productsandservices() {
           <div className={classes.productsHeader}>The Products We Provide</div>
           <div className={classes.productsSub}>But Not Limited To</div>
           <div className={classes.productsGrid}>
-            {products.slice(0, 6).map((i) => {
+            {products.map((i) => {
               return (
                 <div className={classes.productsGridChild}>
                   <img src={i.img} alt={i.name} />
