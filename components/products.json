@@ -52,16 +52,17 @@
     "img": "/products/milk-powders.jpeg"
   },
   {
-    "name": "Rice",
-    "img": "/products/rice.jpg"
-  },
-  {
     "name": "Wood Log & Sawn Woods",
     "img": "/products/wood.webp"
   },
   {
+    "name": "Rice",
+    "img": "/products/rice.jpg"
+  },
+
+  {
     "name": "Alfalfa Hays",
-    "img": "/products/alfalfa-hay.jpg"
+    "img": "/products/alfalfa-hay.jpeg"
   },
   {
     "name": "Minerals & Ores",
@@ -73,7 +74,7 @@
   },
   {
     "name": "Aluminum",
-    "img": "/products/aluminum.jpg"
+    "img": "/products/aluminum.jpeg"
   },
   {
     "name": "Sheet Metal",
@@ -110,5 +111,13 @@
   {
     "name": "Soft Wood",
     "img": "/products/soft-wood.jpg"
+  },
+  {
+    "name": "Newsprint Paper",
+    "img": "/products/newspaper.webp"
+  },
+  {
+    "name": "Rolled Iron",
+    "img": "/products/rolled-iron.jpeg"
   }
 ]
