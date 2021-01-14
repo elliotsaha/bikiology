@@ -100,6 +100,8 @@ const useStyles = makeStyles((theme) =>
     },
     aboveFoldGlobe: {
       position: "absolute",
+      "-moz-opacity": "15%",
+      "-khtml-opacity": "15%",
       opacity: "15%",
       fontSize: "65rem",
       color: "#F8BB86",
@@ -130,7 +132,7 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
       padding: "5rem",
       width: "100%",
-      position: 'relative',
+      position: "relative",
       [theme.breakpoints.down("920")]: {
         paddingRight: 0,
         paddingLeft: 0,
@@ -152,6 +154,8 @@ const useStyles = makeStyles((theme) =>
       height: "50rem",
       margin: 0,
       opacity: "75%",
+      "-moz-opacity": "75%",
+      "-khtml-opacity": "75%",
       marginRight: "20rem",
       objectFit: "cover",
       [theme.breakpoints.down("1050")]: {
@@ -317,6 +321,8 @@ const useStyles = makeStyles((theme) =>
       height: "25rem",
       background: "#F8BB86",
       opacity: "25%",
+      "-moz-opacity": "25%",
+      "-khtml-opacity": "25%",
       borderRadius: "50%",
       bottom: "-5rem",
       left: "-5rem",
@@ -328,6 +334,8 @@ const useStyles = makeStyles((theme) =>
       height: "20rem",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       opacity: "25%",
+      "-moz-opacity": "25%",
+      "-khtml-opacity": "25%",
       borderRadius: "50%",
       top: "-5rem",
       right: "-5rem",
@@ -406,6 +414,8 @@ const useStyles = makeStyles((theme) =>
         transition: "all 0.4s ease",
         [theme.breakpoints.down("750")]: {
           opacity: "55%",
+          "-moz-opacity": "55%",
+          "-khtml-opacity": "55%",
         },
         [theme.breakpoints.down("1000")]: {
           width: "17.5rem",
@@ -429,19 +439,27 @@ const useStyles = makeStyles((theme) =>
         display: "none",
         transition: "all 0.4s ease",
         opacity: "0%",
+        "-moz-opacity": "0%",
+        "-khtml-opacity": "0%",
         [theme.breakpoints.down("750")]: {
           display: "block",
+          "-moz-opacity": "100%",
+          "-khtml-opacity": "100%",
           opacity: "100%",
         },
       },
       "&:hover": {
         "& img": {
+          "-moz-opacity": "50%",
+          "-khtml-opacity": "50%",
           opacity: "50%",
           transition: "all 0.4s ease",
         },
         "& div": {
           display: "block",
           transition: "all 0.4s ease",
+          "-moz-opacity": "100%",
+          "-khtml-opacity": "100%",
           opacity: "100%",
         },
       },
@@ -491,7 +509,7 @@ export default function index() {
           <div className={classes.belowFoldTextContainer}>
             <div className={classes.belowFoldImageContainer}>
               <img
-                src="/FullSizeRender.jpeg"
+                src="/buildingRender.JPG"
                 alt="building"
                 className={classes.belowFoldImage}
               />
@@ -514,7 +532,8 @@ export default function index() {
                   <div className={classes.offerTitle}>Goods</div>
                 </div>
                 <div className={classes.offerText}>
-                  Bikiology Strives at Giving Customers The Best Quality of Products and Nothing Less.
+                  Bikiology Strives at Giving Customers The Best Quality of
+                  Products and Nothing Less.
                 </div>
               </div>
             </div>
@@ -528,7 +547,8 @@ export default function index() {
                   <div className={classes.offerTitle}>Services</div>
                 </div>
                 <div className={classes.offerText}>
-                  The Services that Our Company Provides are Top of the Line and Will Help your Business Grow Exponentially.
+                  The Services that Our Company Provides are Top of the Line and
+                  Will Help your Business Grow Exponentially.
                 </div>
               </div>
             </div>
@@ -542,7 +562,8 @@ export default function index() {
                   <div className={classes.offerTitle}>Prices</div>
                 </div>
                 <div className={classes.offerText}>
-                  Bikiology Gives the Best Prices in Canada For The Services and Products that We Provide.
+                  Bikiology Gives the Best Prices in Canada For The Services and
+                  Products that We Provide.
                 </div>
               </div>
             </div>

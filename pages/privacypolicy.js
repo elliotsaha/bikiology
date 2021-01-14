@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "10%",
+      "-moz-opacity": "10%",
+      "-khtml-opacity": "10%",
       top: "10rem",
       left: "-7.5rem",
       zIndex: 1,
@@ -35,6 +37,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "10%",
+      "-moz-opacity": "10%",
+      "-khtml-opacity": "10%",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       right: "5rem",
       bottom: "5rem",
@@ -46,6 +50,8 @@ const useStyles = makeStyles((theme) =>
       },
       [theme.breakpoints.down("500")]: {
         opacity: "5%",
+        "-moz-opacity": "5%",
+        "-khtml-opacity": "5%",
       },
     },
     content: {

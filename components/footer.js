@@ -190,7 +190,7 @@ export default function footer() {
         <div className={classes.sectionSupport}>
           <div className={classes.header}>Support</div>
           <div className={classes.link}>
-            <div className={classes.email}>info@bikiology.com</div>
+            <div className={classes.email}>Email: info@bikiology.com</div>
           </div>
 
           <div className={classes.phone}>

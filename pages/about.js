@@ -77,6 +77,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "15%",
+      "-moz-opacity": "15%",
+      "-khtml-opacity": "15%",
       bottom: "27.5rem",
       left: "16rem",
       zIndex: -1,
@@ -95,6 +97,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "20%",
+      "-moz-opacity": "20%",
+      "-khtml-opacity": "20%",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       right: "-7rem",
       bottom: "-5rem",
@@ -107,6 +111,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "20%",
+      "-moz-opacity": "20%",
+      "-khtml-opacity": "20%",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       left: "-7rem",
       top: "-5rem",
@@ -119,8 +125,10 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "10%",
+      "-moz-opacity": "10%",
+      "-khtml-opacity": "10%",
       right: "-5rem",
-      
+
       zIndex: -1,
     },
     aboveFoldText: {
@@ -139,7 +147,7 @@ const useStyles = makeStyles((theme) =>
       paddingTop: "3.5rem",
       paddingBottom: "10rem",
       flexDirection: "column",
-      position: 'relative',
+      position: "relative",
       zIndex: 2,
       [theme.breakpoints.down("600")]: {
         paddingTop: "3rem",

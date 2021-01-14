@@ -75,6 +75,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "15%",
+      "-moz-opacity": "15%",
+      "-khtml-opacity": "15%",
       bottom: "5.5rem",
       left: "-7.5rem",
       zIndex: -1,
@@ -97,6 +99,8 @@ const useStyles = makeStyles((theme) =>
       position: "absolute",
       borderRadius: "50%",
       opacity: "20%",
+      "-moz-opacity": "20%",
+      "-khtml-opacity": "20%",
       boxShadow: "0 0 0 0.5rem #F8BB86",
       right: "5rem",
       bottom: "20rem",
@@ -208,6 +212,8 @@ const useStyles = makeStyles((theme) =>
     handshakeImg: {
       width: "30rem",
       opacity: "75%",
+      "-moz-opacity": "75%",
+      "-khtml-opacity": "75%",
       [theme.breakpoints.down("1000")]: {
         width: "25rem",
         marginLeft: "3rem",
