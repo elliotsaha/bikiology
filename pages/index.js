@@ -467,7 +467,7 @@ export default function index() {
           <div className={classes.aboveFoldTextBox}>
             <div className={classes.aboveFoldTextBoxInner}>
               <div className={classes.header}>
-                Your One Stop Export Import Solution.
+                Your One Stop Export Import Source.
               </div>
               <p className={classes.paragraph}>
                 We are a Canadian integrated Export-Import Company headquartered

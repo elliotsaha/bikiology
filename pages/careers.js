@@ -306,8 +306,8 @@ export default function careers() {
                   <mark className={classes.mark}>By Post: </mark>
                 </div>
                 <div className={classes.howToApplyContactSub}>
-                  Bikiology Inc 21-10405 Jasper Ave. (700-21, Standard Life
-                  Building). Edmonton, AB, T5J3S2, Canada.
+                  Bikiology Inc 10405 Jasper Ave. (Suite # 700-21, Standard
+                  Life Building). Edmonton, AB, T5J3S2, Canada.
                 </div>
               </div>
             </div>

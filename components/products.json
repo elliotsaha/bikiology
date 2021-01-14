@@ -12,16 +12,12 @@
     "img": "/products/wheat.jpg"
   },
   {
-    "name": "Soybeans (For Human & Animal Consumption)",
+    "name": "Soybeans",
     "img": "/products/soybeans.jpg"
   },
   {
     "name": "Corn",
     "img": "/products/corn.jpg"
-  },
-  {
-    "name": "Scrap Metal",
-    "img": "/products/scrapmetal.jpg"
   },
   {
     "name": "Red & Green Lentils",
@@ -48,12 +44,16 @@
     "img": "/products/oil-seeds.jpeg"
   },
   {
-    "name": "Metal Scraps",
+    "name": "Scrap Metal",
     "img": "/products/metal-scraps.jpeg"
   },
   {
     "name": "Milk Powders",
     "img": "/products/milk-powders.jpeg"
+  },
+  {
+    "name": "Rice",
+    "img": "/products/rice.jpg"
   },
   {
     "name": "Wood Log & Sawn Woods",
@@ -92,19 +92,23 @@
     "img": "/products/copper-cathode.png"
   },
   {
+    "name": "Cement Clinker",
+    "img": "/products/cement-clinker.jpg"
+  },
+  {
+    "name": "Boulder & Aggregate Stones",
+    "img": "/products/cement-clinker.jpg"
+  },
+  {
+    "name": "Sands",
+    "img": "/products/sands.jpg"
+  },
+  {
     "name": "Hard Wood",
-    "img": "/products/hard-wood.jpeg"
-  },
-  {
-    "name": "Rough Wood",
-    "img": "/products/rough-wood.jpeg"
-  },
-  {
-    "name": "Sawn Wood",
-    "img": "/products/sawn-wood.jpeg"
+    "img": "/products/hardwood.jpg"
   },
   {
     "name": "Soft Wood",
-    "img": "/products/soft-wood.jpeg"
+    "img": "/products/soft-wood.jpg"
   }
 ]

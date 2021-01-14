@@ -491,7 +491,7 @@ export default function productsandservices() {
                 <div className={classes.servicesText}>
                   We market goods and services directly, with contract,
                   subcontract or assist businesses to market their products &
-                  services in a certain country or internationally.
+                  services in a certain country or all over the world.
                 </div>
               </div>
             </div>

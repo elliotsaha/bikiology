@@ -198,13 +198,13 @@ export default function footer() {
           </div>
 
           <div className={classes.phone}>
-            <div>+ 1 780 667 6622 (Sales office)</div>
+            <div>+ 1 403 707 9091 (Sales office)</div>
           </div>
           <div className={classes.phone}>
-            <div>+ 1 780 667 6622 (Toll free)</div>
+            <div>+ 1 888 722 0111 (Toll free)</div>
           </div>
           <div className={classes.phone}>
-            <div>+ 1 780 667 6622 (Fax)</div>
+            <div>+ 1 888 722 0111 (Fax)</div>
           </div>
         </div>
         <div className={classes.section}>
@@ -245,7 +245,7 @@ export default function footer() {
       </div>
 
       <div className={classes.locationRoot}>
-        Bikiology Inc. 21-10405 Jasper Ave, Suite # 21-B700, Standard Life
+        Bikiology Inc. 10405 Jasper Ave, Suite # 700-21, Standard Life
         Building, Edmonton, AB. T5J3S2. Canada.
       </div>
     </div>
