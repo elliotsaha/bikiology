@@ -7,6 +7,7 @@ import LocalAtmIcon from "@material-ui/icons/LocalAtm";
 import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 import DataUsageIcon from "@material-ui/icons/DataUsage";
 import products from "../components/products.json";
+import addOn from "../components/addOnProducts.json";
 import Link from "next/link";
 import ContactButton from "../components/contactButton";
 const useStyles = makeStyles((theme) =>
@@ -575,6 +576,14 @@ export default function index() {
           <div className={classes.servicesSub}>But Not Limited To</div>
           <div className={classes.servicesGrid}>
             {products.slice(0, 6).map((i) => {
+              return (
+                <div className={classes.servicesGridChild}>
+                  <img src={i.img} alt={i.name} />
+                  <div>{i.name}</div>
+                </div>
+              );
+            })}
+            {addOn.slice(0, 6).map((i) => {
               return (
                 <div className={classes.servicesGridChild}>
                   <img src={i.img} alt={i.name} />
