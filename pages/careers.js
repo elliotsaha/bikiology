@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import ContactButton from "../components/contactButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
+import {NextSeo} from "next-seo"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -249,6 +249,10 @@ export default function careers() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="Careers | Bikiology"
+        description="We hire very often; please keep checking our job board and job postings frequently. We always accept resumes for positions that may become available in the future."
+      />
       <div className={classes.root}>
         <div className={classes.aboveFold}>
           <div className={classes.aboveFoldCircle2}></div>

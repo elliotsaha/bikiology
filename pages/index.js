@@ -10,6 +10,8 @@ import products from "../components/products.json";
 import addOn from "../components/addOnProducts.json";
 import Link from "next/link";
 import ContactButton from "../components/contactButton";
+
+import { NextSeo } from "next-seo";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -481,6 +483,11 @@ export default function index() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="Bikiology Inc."
+        description="We are committed to maximizing value by sustainably
+        developing our product & services to our clients all over the world."
+      />
       <div className={classes.root}>
         <div className={classes.aboveFold}>
           <div className={classes.aboveFoldTextBox}>

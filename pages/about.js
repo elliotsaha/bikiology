@@ -5,7 +5,7 @@ import ContactButton from "../components/contactButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import LocalAtmIcon from "@material-ui/icons/LocalAtmRounded";
 import Button from "@material-ui/core/Button";
-
+import {NextSeo} from "next-seo"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -414,6 +414,10 @@ export default function about() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="About Us | Bikiology"
+        description="Through our years of experience, we've learned how to serve better by effective communications."
+      />
       <div className={classes.root}>
         <div className={classes.aboveFold}>
           <div className={classes.aboveFoldCircle2}></div>

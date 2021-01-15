@@ -11,6 +11,7 @@ import products from "../components/products.json";
 import BuildIcon from "@material-ui/icons/Build";
 import BusinessIcon from "@material-ui/icons/Business";
 import PhonelinkIcon from "@material-ui/icons/Phonelink";
+import { NextSeo } from "next-seo";
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -424,6 +425,12 @@ export default function productsandservices() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="Products & Services | Bikiology"
+        description="We export goods and services directly from the manufacturer,
+        producer, wholesaler and traders of Canada and other countries, or we find direct buyers in a certain country or in
+        any other countries globally."
+      />
       <div className={classes.root}>
         <div className={classes.aboveFold}>
           <div className={classes.aboveFoldCircle2}></div>

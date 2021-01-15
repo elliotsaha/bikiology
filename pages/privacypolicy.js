@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
-
+import {NextSeo} from "next-seo"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -87,6 +87,10 @@ export default function privacypolicy() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="Privacy Policy | Bikiology"
+        description="Your privacy is important to us. It is Bikiology Inc.'s policy to respect your privacy regarding any information we may collect from you across our website..."
+      />
       <div className={classes.root}>
         <div className={classes.circle1}></div>
         <div className={classes.circle2}></div>

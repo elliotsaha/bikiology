@@ -8,7 +8,7 @@ import { Formik } from "formik";
 import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import parsePhoneNumber from "libphonenumber-js";
 import axios from "axios";
-
+import {NextSeo} from "next-seo"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -155,6 +155,10 @@ export default function contact() {
   });
   return (
     <Layout whiteLogo={src}>
+      <NextSeo
+        title="Contact | Bikiology"
+        description="Bikiology Strives at Giving Customers The Best Quality of Products and Nothing Less."
+      />
       <div className={classes.root}>
         <div className={classes.inner}>
           <div className={classes.leftPanel}>
@@ -217,11 +221,11 @@ export default function contact() {
                       method: "post",
                       url: "/api/sendmail",
                       data: {
-                        values: values
+                        values: values,
                       },
                     }).then((res) => {
-                      console.log(res)
-                    })
+                      console.log(res);
+                    });
                     setSubmitting(false);
                   }}
                   className={classes.flexCenter}

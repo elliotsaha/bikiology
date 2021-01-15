@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
-
+import {NextSeo} from "next-seo"
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
@@ -99,6 +99,13 @@ export default function terms() {
   const classes = useStyles();
   return (
     <Layout>
+      <NextSeo
+        title="Terms & Conditions | Bikiology"
+        description="The materials on Bikiology Inc.'s website are provided on an 'as
+        is' basis. Bikiology Inc. makes no warranties, expressed or
+        implied, and hereby disclaims and negates all other warranties
+        including, without limitation, implied warranties or conditions of..."
+      />
       <div className={classes.root}>
         <div className={classes.circle1}></div>
         <div className={classes.circle2}></div>
